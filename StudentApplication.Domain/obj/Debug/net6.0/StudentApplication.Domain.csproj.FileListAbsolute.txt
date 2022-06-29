@@ -1,0 +1,12 @@
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\bin\Debug\net6.0\StudentApplication.Domain.deps.json
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\bin\Debug\net6.0\StudentApplication.Domain.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\bin\Debug\net6.0\StudentApplication.Domain.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.csproj.AssemblyReference.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.AssemblyInfoInputs.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.AssemblyInfo.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.csproj.CoreCompileInputs.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\refint\StudentApplication.Domain.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\StudentApplication.Domain.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.Domain\obj\Debug\net6.0\ref\StudentApplication.Domain.dll

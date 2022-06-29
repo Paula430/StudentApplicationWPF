@@ -1,0 +1,35 @@
+﻿<Application x:Class="StudentApplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:StudentApplication.ViewModels
+             xmlns:local="clr-namespace:StudentApplication"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="ThemeView/TextBoxDictionary.xaml"/>
+                <ResourceDictionary Source="ThemeView/PasswordBoxDictionary.xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+
+        <DataTemplate DataType="{x:Type viewModels:GradeViewModel}">
+            <views:GradeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:CoursesViewModel}">
+            <views:CourseView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:TestsViewModel}">
+            <views:TestView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:HomeViewModel}">
+            <views:TestView/>
+        </DataTemplate>
+
+    </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,17 @@
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\bin\Debug\net6.0\StudentApplication.EF.deps.json
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\bin\Debug\net6.0\StudentApplication.EF.runtimeconfig.json
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\bin\Debug\net6.0\StudentApplication.EF.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\bin\Debug\net6.0\StudentApplication.EF.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\bin\Debug\net6.0\StudentApplication.Domain.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\bin\Debug\net6.0\StudentApplication.Domain.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.csproj.AssemblyReference.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.AssemblyInfoInputs.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.AssemblyInfo.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.csproj.CoreCompileInputs.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.csproj.CopyComplete
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\refint\StudentApplication.EF.dll
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\StudentApplication.EF.genruntimeconfig.cache
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication.EF\obj\Debug\net6.0\ref\StudentApplication.EF.dll
