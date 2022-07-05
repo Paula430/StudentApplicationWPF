@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\App.xaml
-4488303162
+10833504231
 
-4-1729247096
+15197614330
 222965666436
-LoggedPage.xaml;MainWindow.xaml;ThemeView\PasswordBoxDictionary.xaml;ThemeView\TextBoxDictionary.xaml;
+LoggedPage.xaml;MainWindow.xaml;ThemeView\ButtonDictionary.xaml;ThemeView\MenuButtonDictionary.xaml;ThemeView\PasswordBoxDictionary.xaml;ThemeView\TextBoxDictionary.xaml;Views\CoursesControls.xaml;Views\CourseView.xaml;Views\GradeView.xaml;Views\TestView.xaml;
 
 False
 

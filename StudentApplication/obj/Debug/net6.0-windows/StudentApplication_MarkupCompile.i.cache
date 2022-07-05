@@ -1,0 +1,20 @@
+﻿StudentApplication
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\
+StudentApplication
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\App.xaml
+10833504231
+
+17777423701
+222965666436
+LoggedPage.xaml;MainWindow.xaml;ThemeView\ButtonDictionary.xaml;ThemeView\MenuButtonDictionary.xaml;ThemeView\PasswordBoxDictionary.xaml;ThemeView\TextBoxDictionary.xaml;Views\CoursesControls.xaml;Views\CourseView.xaml;Views\GradeView.xaml;Views\TestView.xaml;
+
+True
+

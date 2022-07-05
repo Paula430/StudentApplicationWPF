@@ -53,7 +53,7 @@ namespace StudentApplication.ViewModels {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StudentApplication;V1.0.0.0;component/viewmodels/testviewmodel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/StudentApplication;component/viewmodels/testviewmodel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ViewModels\TestViewModel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -23,5 +23,17 @@ namespace StudentApplication
         {
             InitializeComponent();
         }
+
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
     }
 }

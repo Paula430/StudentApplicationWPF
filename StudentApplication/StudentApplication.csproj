@@ -18,8 +18,4 @@
     <ProjectReference Include="..\StudentApplication.EF\StudentApplication.EF.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-
 </Project>

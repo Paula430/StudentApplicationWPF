@@ -64,3 +64,14 @@ D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\bin\Debug\net6.0
 D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\bin\Debug\net6.0-windows\StudentApplication.EF.pdb
 D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\LoggedPage.g.cs
 D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\LoggedPage.baml
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\ThemeView\MenuButtonDictionary.baml
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\CourseView.g.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\GradeView.g.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\TestView.g.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\CourseView.baml
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\GradeView.baml
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\TestView.baml
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\ThemeView\ButtonDictionary.baml
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\CoursesControls.g.cs
+D:\studia INF\sem4\p4laby\StudentApplication\StudentApplication\obj\Debug\net6.0-windows\Views\CoursesControls.baml

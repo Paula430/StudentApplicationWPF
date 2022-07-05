@@ -12,9 +12,9 @@ namespace StudentApplication.Models
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void onPropertyChanged(string propertyNme)
+        protected void onPropertyChanged(string propertyName=null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyNme));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

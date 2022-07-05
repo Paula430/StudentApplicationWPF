@@ -3,8 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:nav="clr-namespace:StudentApplication.State.Navigator" d:DataContext="{d:DesignInstance Type=nav:Navigator}"
         xmlns:local="clr-namespace:StudentApplication"
+        xmlns:viewModel="clr-namespace:StudentApplication.ViewModels"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:model="clr-namespace:StudentApplication.Domain.Model;assembly=StudentApplication.Domain"
         mc:Ignorable="d"
         Height="600" Width="920"
         Background="Transparent"
@@ -12,7 +14,12 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         >
-    <Grid Background="#27273a">
+
+    <Window.DataContext>
+        <viewModel:LoggedViewModel/>
+    </Window.DataContext>
+
+    <Grid Background="#27273a" MouseDown="Border_MouseDown">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="240"/>
             <ColumnDefinition/>
@@ -24,20 +31,34 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top">
         </StackPanel>
-        <StackPanel Grid.Row="1" VerticalAlignment="Center">
-            <controls:NavigationBar DataContext="{Binding Navigator}"/>
-            <ContentControl Content="{Binding CurrentViewModel}"/>
-        </StackPanel>
+
+
         <Border Grid.Row="1" Background="#33334c" />
+
+        <StackPanel Grid.Row="1" Margin="0,20,0,0">
+            <RadioButton Content="My Grades" Height="50" Foreground="White" FontSize="24" Style="{StaticResource MenuButtonDictionary}" IsChecked="True" Command="{Binding GradeViewCommand}"/>
+            <RadioButton Content="My Tests" Height="50" Foreground="White" FontSize="24"  Style="{StaticResource MenuButtonDictionary}" Command="{Binding TestViewCommand}" />
+            <RadioButton Content="My Courses" Height="50" Foreground="White" FontSize="24" Style="{StaticResource MenuButtonDictionary}" Command="{Binding CourseViewCommand}"/>
+        </StackPanel>
+        
         <Border Grid.Column="1" Background="#a5d5ff" />
+        
+        <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button Margin="10 20 " Style="{StaticResource MaterialDesignFloatingActionButton }" Background="{x:Null}" ToolTip="Close" x:Name="btn_Exit" Click="BtnExit_Click">
+                <materialDesign:PackIcon Kind="Close" Foreground="Black" Width="30" Height="30"/>
+            </Button>
+        </StackPanel>
+        
         <Border Grid.Column="1" Grid.Row="1" Background="#E6E6E6">
         </Border>
-        <StackPanel  VerticalAlignment="Center"/>
+        <StackPanel VerticalAlignment="Center"/>
         <Grid Grid.Row="1" Grid.Column="1" Background="Transparent">
         </Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="https://cdn0.iconfinder.com/data/icons/education-364/24/college-education-graduation-learning-school-cap-512.png" Width="120" Height="170"/>
         </StackPanel>
+
+        <ContentControl Grid.Row="1" Grid.Column="1" Margin="10" Content="{Binding CurrentView}"/>
 
     </Grid>
 </Window>

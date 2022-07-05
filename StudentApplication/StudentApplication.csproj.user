@@ -7,30 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Controls\NavigationBar.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="LoggedPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewModels\CoursesViewModel.xaml.cs">
+    <Compile Update="Views\CoursesControls.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewModels\GradeViewModel.xaml.cs">
+    <Compile Update="Views\CourseView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewModels\TestViewModel.xaml.cs">
+    <Compile Update="Views\GradeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TestView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Controls\NavigationBar.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="LoggedPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ThemeView\ButtonDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ThemeView\MenuButtonDictionary.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ThemeView\PasswordBoxDictionary.xaml">
@@ -39,13 +42,16 @@
     <Page Update="ThemeView\TextBoxDictionary.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\CoursesViewModel.xaml">
+    <Page Update="Views\CoursesControls.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\GradeViewModel.xaml">
+    <Page Update="Views\CourseView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\TestViewModel.xaml">
+    <Page Update="Views\GradeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TestView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

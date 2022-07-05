@@ -79,5 +79,38 @@ namespace StudentApplication.EF.Services
             }
 
         }
+
+        public List<Grades>GetGrades(int idStudent)
+        {
+            using (SMDbContext context = _contextFactory.CreateDbContext())
+            {
+                List<Grades> entity = context.Grades.Where(g => g.StudentId == idStudent).ToList();
+
+                return entity;
+            }
+        }
+
+        public List<Courses> GetCourses()
+        {
+            using (SMDbContext context = _contextFactory.CreateDbContext())
+            {
+
+
+               List<Courses> entity = context.Courses.ToList();
+
+                return entity;
+            }
+        }
+
+        public  List<Tests> GetTests()
+        {
+            using (SMDbContext context = _contextFactory.CreateDbContext())
+            {
+                List<Tests> entity =  context.Tests.ToList();
+                return entity;
+            }
+        }
+
+
     }
 }

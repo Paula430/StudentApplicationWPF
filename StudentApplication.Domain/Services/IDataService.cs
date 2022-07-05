@@ -15,6 +15,12 @@ namespace StudentApplication.Domain.Services
         Task<T> Create(T entity);
         Task<bool> Delete(int id);
         Task<Students> GetByEmail(string email);
+        List<Grades> GetGrades(int idStudent);
+        List<Courses> GetCourses();
+        List<Tests> GetTests();
+
+
+
 
 
     }
