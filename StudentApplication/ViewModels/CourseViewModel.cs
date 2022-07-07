@@ -14,10 +14,9 @@ namespace StudentApplication.ViewModels
     public class CourseViewModel:ObserveableObject
     {
 
+        private int currentStudentId = 1;
         private ICollection<Courses> _currentCourses;
-
-        
-
+          
         public CourseViewModel()
         {
             _currentCourses = LoadCourses();
@@ -32,11 +31,8 @@ namespace StudentApplication.ViewModels
 
         public ICollection<Courses> LoadCourses()
         {
-
             IDataService<Courses> gradesservice = new GenericDataService<Courses>(new SMDbContextFactory());
-            return gradesservice.GetCourses();
-
-
+            return gradesservice.GetCourses(currentStudentId);
         }
     }
 }

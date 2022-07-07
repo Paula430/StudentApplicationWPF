@@ -42,6 +42,7 @@ namespace StudentApplication.EF.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    StudyId = table.Column<int>(type: "int", nullable: false),
                     CourseName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BeginTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DayName = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -96,6 +97,7 @@ namespace StudentApplication.EF.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CourseId = table.Column<int>(type: "int", nullable: false),
+                    StudyId = table.Column<int>(type: "int", nullable: false),
                     Date = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Note = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CoursesId = table.Column<int>(type: "int", nullable: true)

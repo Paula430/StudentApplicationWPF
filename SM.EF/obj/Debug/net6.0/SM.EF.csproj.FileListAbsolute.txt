@@ -1,0 +1,12 @@
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\bin\Debug\net6.0\SM.EF.deps.json
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\bin\Debug\net6.0\SM.EF.dll
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\bin\Debug\net6.0\SM.EF.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.csproj.AssemblyReference.cache
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.AssemblyInfoInputs.cache
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.AssemblyInfo.cs
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.csproj.CoreCompileInputs.cache
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.dll
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\refint\SM.EF.dll
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\SM.EF.pdb
+D:\studia INF\sem4\p4laby\StudentApplication\SM.EF\obj\Debug\net6.0\ref\SM.EF.dll

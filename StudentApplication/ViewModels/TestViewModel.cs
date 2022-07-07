@@ -13,27 +13,35 @@ namespace StudentApplication.ViewModels
 {
     public class TestViewModel: ObserveableObject
     {
-        private List<Tests> _currentTests;
+        private int currentStudentId = 1;
+
+        private List<TestsCourses> _currentTests;
+        
 
         public TestViewModel()
         {
-            _currentTests = LoadTests();
+            _currentTests = LoadTestsCourses();
+           
         }
 
-
-        public List<Tests> CurrentTests
+        public List<TestsCourses> CurrentTests
         {
             get { return _currentTests; }
             set { _currentTests = value; onPropertyChanged(); }
         }
 
-        public List<Tests> LoadTests()
+        
+
+        public List<TestsCourses> LoadTestsCourses()
         {
-
             IDataService<Tests> testsservice = new GenericDataService<Tests>(new SMDbContextFactory());
-            return testsservice.GetTests();
-
+            return testsservice.GetTestsCourses(currentStudentId);
         }
+
+     
+
 
     }
 }
+
+

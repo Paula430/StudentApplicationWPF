@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,20 +21,21 @@ using System.Windows.Shapes;
 
 namespace StudentApplication
 {
-
+   
     public partial class MainWindow : Window
     {
+        public int CurrentStudent;
 
-      
+
         public MainWindow()
         {
             InitializeComponent();
-        }
 
+        }
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+        
             var email=txtStudentEmail.Text;
             var password = txtPassword.Password;
 
@@ -42,14 +44,31 @@ namespace StudentApplication
                 bool userfound = context.Students.Any((e) => e.Email == email && e.Password==password);
                 if (userfound)
                 {
+                    CurrentStudent=context.Students.Where(e=>e.Email==email).FirstOrDefault<Students>().Id;
                     GrantAccess();
                     Close();
                 }
+                else if (txtStudentEmail.Text.Length == 0)
+                {
+                    MessageBox.Show("Enter an email.", "", MessageBoxButton.OK, MessageBoxImage.Error);
+                    txtStudentEmail.Focus();
+                }
+                else if (!Regex.IsMatch(txtStudentEmail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+                {
+
+                    MessageBox.Show("Enter a valid email.","",MessageBoxButton.OK,MessageBoxImage.Error);
+                    txtStudentEmail.Select(0, txtStudentEmail.Text.Length);
+                    txtStudentEmail.Focus();
+                }
+                else if(txtPassword.Password.Length == 0)
+                {
+                    MessageBox.Show("Enter password", "", MessageBoxButton.OK, MessageBoxImage.Error);
+                    txtPassword.Focus();
+                }
                 else
                 {
-                    MessageBox.Show("Username or password is incorrect", "", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Email or password is incorrect", "", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-
             }
 
         }          

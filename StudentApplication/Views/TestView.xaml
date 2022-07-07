@@ -7,14 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+      
         <DataGrid Margin="20" Name="TestsGrid" ItemsSource="{Binding CurrentTests}" AutoGenerateColumns="False" Background="Transparent">
-    
-        <DataGrid.Columns>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Width="150" Binding="{Binding TestDate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Test" Width="250" Binding="{Binding testNote}"></DataGridTextColumn>
 
-            <DataGridTextColumn Header="Date" Width="200" Binding="{Binding Date}"></DataGridTextColumn>
-            <DataGridTextColumn Header="Test" Width="200" Binding="{Binding CourseId }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Course" Width="*" Binding="{Binding CourseName}"></DataGridTextColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
-       
+
+     
+
     </Grid>
 </UserControl>

@@ -7,25 +7,13 @@
              xmlns:local="clr-namespace:StudentApplication.Views" xmlns:viewmodels="clr-namespace:StudentApplication.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:GradeViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-
     <Grid>
-        <!--<DataGrid ItemsSource="{Binding CurrentGrades}" Height="auto" Background="Transparent" Name="GradeGrid">
-
-
-            
-        </DataGrid>-->
-
         <DataGrid Margin="20" Name="GradeGrid" ItemsSource="{Binding CurrentGrades}" AutoGenerateColumns="False" Background="Transparent">
             <DataGrid.Columns>
-
-                <DataGridTextColumn Header="Grade" Width="200" Binding="{Binding GradeValue}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Test" Width="200" Binding="{Binding TestId}"></DataGridTextColumn>
-                
-
+                <DataGridTextColumn Header="Grade" Width="100" Binding="{Binding GradeValue}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Test" Width="300" Binding="{Binding TestNote}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Course" Width="*" Binding="{Binding CourseName}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-
-
     </Grid>
-     
 </UserControl>

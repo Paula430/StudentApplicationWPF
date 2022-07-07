@@ -12,32 +12,32 @@ using System.Threading.Tasks;
 
 namespace StudentApplication.ViewModels
 {
+  
     public class GradeViewModel : ObserveableObject
     {
-        private List<Grades> _currentGrades;  
-    
-
+        private int currentStudentId = 1;
+        private List<GradeTestsCourses> _currentGrades;
+        
         public GradeViewModel()
         {
-            _currentGrades = LoadGrades();
-            
+            _currentGrades = LoadGradesTestsCourses(currentStudentId);
         }
 
-        public List<Grades> CurrentGrades
+        public List<GradeTestsCourses> CurrentGrades
         {
             get { return _currentGrades; }
             set { _currentGrades = value; onPropertyChanged(); }
         }
 
-        public List<Grades> LoadGrades()
+        public List<GradeTestsCourses> LoadGradesTestsCourses(int idStudent)
         {
 
-            IDataService<Grades> gradesservice = new GenericDataService<Grades>(new SMDbContextFactory());
-            return gradesservice.GetGrades(1);
+            IDataService<GradeTestsCourses> gradesservice = new GenericDataService<GradeTestsCourses>(new SMDbContextFactory());
+            return gradesservice.GetGradesTestsCourses(currentStudentId); 
+                     
 
         }
 
-  
 
     }
 }

@@ -45,6 +45,9 @@ namespace StudentApplication.EF.Migrations
                     b.Property<int?>("StudiesId")
                         .HasColumnType("int");
 
+                    b.Property<int>("StudyId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("StudiesId");
@@ -200,6 +203,9 @@ namespace StudentApplication.EF.Migrations
                     b.Property<string>("Note")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StudyId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

@@ -80,37 +80,66 @@ namespace StudentApplication.EF.Services
 
         }
 
-        public List<Grades>GetGrades(int idStudent)
+        public  List<GradeTestsCourses>GetGradesTestsCourses(int idStudent)
         {
             using (SMDbContext context = _contextFactory.CreateDbContext())
             {
-                List<Grades> entity = context.Grades.Where(g => g.StudentId == idStudent).ToList();
+                var data = context.Grades
+                    .Join(
+                        context.Tests,
+                        grade => grade.TestId,
+                        test => test.Id,
+                        (grade, test) => new
+                        { StudentId = grade.StudentId, GradeValue = grade.GradeValue, TestNote = test.Note, CourseId = test.CourseId })
+                    .Join(
+                        context.Courses,
+                        test => test.CourseId,
+                        course => course.Id,
+                        (test, course) => new GradeTestsCourses { StudentId = test.StudentId, GradeValue = test.GradeValue, TestNote = test.TestNote, CourseName = course.CourseName }
+                        );
 
+                var entity = data.Where(d => d.StudentId == idStudent).ToList();
+                return entity;
+
+            }
+        }
+
+        public List<Courses> GetCourses(int idStudent)
+        {
+            using (SMDbContext context = _contextFactory.CreateDbContext())
+            {
+                int idstudy = context.Students.Where(s => s.Id == idStudent).FirstOrDefault<Students>().StudyId;
+                List<Courses> entity = context.Courses.Where(s=>s.StudyId==idstudy).ToList();
                 return entity;
             }
         }
 
-        public List<Courses> GetCourses()
+        public List<TestsCourses> GetTestsCourses(int idStudent)
         {
             using (SMDbContext context = _contextFactory.CreateDbContext())
             {
+                int idstudy=context.Students.Where(s => s.Id == idStudent).FirstOrDefault<Students>().StudyId;
 
+                var data = context.Tests
+                    .Join(
+                        context.Courses,
+                        test => test.CourseId,
+                        course => course.Id,
+                        (test, course) => new TestsCourses{ CourseName = course.CourseName, testNote = test.Note, TestDate = test.Date, StudyId = test.StudyId }
+                    );
 
-               List<Courses> entity = context.Courses.ToList();
+                var entity = data.Where(d => d.StudyId == idstudy).ToList();
+                   
+                    
+                //int idstudy = context.Students.Where(s => s.Id == idStudent).FirstOrDefault<Students>().StudyId;
 
+                //List<Tests> entity = context.Tests.Where(t=>t.StudyId==idstudy).ToList();
+
+              
                 return entity;
             }
         }
 
-        public  List<Tests> GetTests()
-        {
-            using (SMDbContext context = _contextFactory.CreateDbContext())
-            {
-                List<Tests> entity =  context.Tests.ToList();
-                return entity;
-            }
-        }
-
-
+      
     }
 }

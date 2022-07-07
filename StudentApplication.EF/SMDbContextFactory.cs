@@ -11,7 +11,7 @@ namespace StudentApplication.EF
 {
     public class SMDbContextFactory : IDesignTimeDbContextFactory<SMDbContext>
     {
-        public SMDbContext CreateDbContext(string[] args = null)
+        public SMDbContext CreateDbContext(string[] args=null)
         {
             var options = new DbContextOptionsBuilder<SMDbContext>();
 

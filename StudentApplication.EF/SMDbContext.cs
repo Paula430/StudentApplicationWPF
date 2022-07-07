@@ -10,12 +10,14 @@ namespace StudentApplication.EF
 {
     public class SMDbContext : DbContext
     {
-        public DbSet<Courses> Courses { get; set; }
-        public DbSet<Students> Students { get; set; }
-        public DbSet<Grades> Grades { get; set; }
-        public DbSet<Tests> Tests { get; set; }
         public DbSet<Schools> Schools { get; set; }
         public DbSet<Studies> Studies { get; set; }
+        public DbSet<Students> Students { get; set; }
+        public DbSet<Courses> Courses { get; set; }
+        public DbSet<Tests> Tests { get; set; }
+        public DbSet<Grades> Grades { get; set; }
+
+
 
         public SMDbContext(DbContextOptions options) : base(options)
         {
@@ -31,9 +33,13 @@ namespace StudentApplication.EF
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StudentManagment;Trusted_Connection=True;");
         }
 
-
-
-
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Tests>()
+        //        .HasOne<Courses>()
+        //        .WithMany()
+        //        .HasForeignKey(t => t.Id);
+        //}
 
 
     }

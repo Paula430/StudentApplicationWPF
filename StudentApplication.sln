@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentApplication.EF", "St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentApplication.Domain", "StudentApplication.Domain\StudentApplication.Domain.csproj", "{1C35A1DD-448C-4D56-BEBB-C9076B5EA6CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSM", "TestSM\TestSM.csproj", "{4DAEF308-4F32-4252-9548-10EFC9F219ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSM", "TestSM\TestSM.csproj", "{4DAEF308-4F32-4252-9548-10EFC9F219ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

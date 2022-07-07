@@ -12,7 +12,7 @@ using StudentApplication.EF;
 namespace StudentApplication.EF.Migrations
 {
     [DbContext(typeof(SMDbContext))]
-    [Migration("20220616154941_initial")]
+    [Migration("20220706205754_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,6 +45,9 @@ namespace StudentApplication.EF.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("StudiesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudyId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -202,6 +205,9 @@ namespace StudentApplication.EF.Migrations
                     b.Property<string>("Note")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StudyId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
