@@ -15,7 +15,7 @@ namespace StudentApplication.ViewModels
   
     public class GradeViewModel : ObserveableObject
     {
-        private int currentStudentId = 1;
+        private int currentStudentId = Authentication.currentStudentId;
         private List<GradeTestsCourses> _currentGrades;
         
         public GradeViewModel()
@@ -34,10 +34,6 @@ namespace StudentApplication.ViewModels
 
             IDataService<GradeTestsCourses> gradesservice = new GenericDataService<GradeTestsCourses>(new SMDbContextFactory());
             return gradesservice.GetGradesTestsCourses(currentStudentId); 
-                     
-
         }
-
-
     }
 }

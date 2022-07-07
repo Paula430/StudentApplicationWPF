@@ -33,13 +33,7 @@ namespace StudentApplication.EF
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StudentManagment;Trusted_Connection=True;");
         }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Tests>()
-        //        .HasOne<Courses>()
-        //        .WithMany()
-        //        .HasForeignKey(t => t.Id);
-        //}
+      
 
 
     }

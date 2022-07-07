@@ -13,10 +13,9 @@ namespace StudentApplication.ViewModels
 {
     public class TestViewModel: ObserveableObject
     {
-        private int currentStudentId = 1;
+        private int currentStudentId = Authentication.currentStudentId;
 
         private List<TestsCourses> _currentTests;
-        
 
         public TestViewModel()
         {
@@ -30,15 +29,12 @@ namespace StudentApplication.ViewModels
             set { _currentTests = value; onPropertyChanged(); }
         }
 
-        
-
         public List<TestsCourses> LoadTestsCourses()
         {
             IDataService<Tests> testsservice = new GenericDataService<Tests>(new SMDbContextFactory());
             return testsservice.GetTestsCourses(currentStudentId);
         }
-
-     
+         
 
 
     }

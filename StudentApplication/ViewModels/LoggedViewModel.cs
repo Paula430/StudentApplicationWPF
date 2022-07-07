@@ -1,4 +1,8 @@
-﻿using StudentApplication.Models;
+﻿using StudentApplication.Domain.Model;
+using StudentApplication.Domain.Services;
+using StudentApplication.EF;
+using StudentApplication.EF.Services;
+using StudentApplication.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +26,10 @@ namespace StudentApplication.ViewModels
 
 
         private object _currentView;
+        private string _currentStudentName;
+        private string _currentStudentLastName;
+        private int _currentStudentAlbum;
+        private string _currentStudentEmail;
 
         public object CurrentView
         {
@@ -29,11 +37,44 @@ namespace StudentApplication.ViewModels
             set { _currentView = value; onPropertyChanged(); }
         }
 
-       public LoggedViewModel()
+        public string CurrentStudentName
+        {
+            get { return _currentStudentName; }
+            set { _currentStudentName = value; onPropertyChanged(); }
+        }
+
+        public string CurrentStudentLastName
+        {
+            get { return _currentStudentLastName; }
+            set { _currentStudentLastName = value; onPropertyChanged(); }
+        }
+
+        public int CurrentStudentAlbum
+        {
+            get { return _currentStudentAlbum; }
+            set { _currentStudentAlbum = value; onPropertyChanged(); }
+        }
+
+
+        public string CurrentStudentEmail
+        {
+            get { return _currentStudentEmail; }
+            set { _currentStudentEmail = value; onPropertyChanged(); }
+        }
+
+
+
+        public LoggedViewModel()
         {
             GradeVM=new GradeViewModel();
             TestVM = new TestViewModel();
             CourseVM = new CourseViewModel();
+
+            CurrentStudentName = GetNameStudents();
+            CurrentStudentLastName = GetLastNameStudents();
+            CurrentStudentAlbum = GetAlbumStudent();
+            CurrentStudentEmail = GetEmailStudent();
+            
 
             CurrentView = GradeVM;
 
@@ -53,6 +94,44 @@ namespace StudentApplication.ViewModels
             });
 
         }
+
+        public static string GetNameStudents()
+        {
+
+            using (SMDbContext context = new SMDbContext())
+            {
+                return context.Students.Where(s => s.Id == Authentication.currentStudentId).FirstOrDefault().FirstName;
+            }
+            
+        }
+        public static string GetLastNameStudents()
+        {
+
+            using (SMDbContext context = new SMDbContext())
+            {
+                return context.Students.Where(s => s.Id == Authentication.currentStudentId).FirstOrDefault().LastName;
+            }
+                       
+        }
+        public static int GetAlbumStudent()
+        {
+
+            using (SMDbContext context = new SMDbContext())
+            {
+                return context.Students.Where(s => s.Id == Authentication.currentStudentId).FirstOrDefault().Id;
+            }
+            
+        }
+        public static string GetEmailStudent()
+        {
+            using (SMDbContext context = new SMDbContext())
+            {
+                return context.Students.Where(s => s.Id == Authentication.currentStudentId).FirstOrDefault().Email;
+            }
+          
+        }
+
+
 
     }
 }

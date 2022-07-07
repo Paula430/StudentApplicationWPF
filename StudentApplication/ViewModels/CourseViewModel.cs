@@ -14,13 +14,15 @@ namespace StudentApplication.ViewModels
     public class CourseViewModel:ObserveableObject
     {
 
-        private int currentStudentId = 1;
+        private int currentStudentId = Authentication.currentStudentId;
+
         private ICollection<Courses> _currentCourses;
           
         public CourseViewModel()
         {
             _currentCourses = LoadCourses();
         }
+
 
 
         public ICollection<Courses> CurrentCourses

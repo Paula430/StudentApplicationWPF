@@ -129,13 +129,6 @@ namespace StudentApplication.EF.Services
                     );
 
                 var entity = data.Where(d => d.StudyId == idstudy).ToList();
-                   
-                    
-                //int idstudy = context.Students.Where(s => s.Id == idStudent).FirstOrDefault<Students>().StudyId;
-
-                //List<Tests> entity = context.Tests.Where(t=>t.StudyId==idstudy).ToList();
-
-              
                 return entity;
             }
         }

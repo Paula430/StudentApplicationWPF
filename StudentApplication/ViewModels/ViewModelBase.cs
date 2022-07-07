@@ -8,5 +8,8 @@ namespace StudentApplication.ViewModels
 {
     public class ViewModelBase
     {
+
     }
+
+
 }

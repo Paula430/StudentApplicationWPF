@@ -3,6 +3,7 @@ using StudentApplication.Domain.Model;
 using StudentApplication.Domain.Services;
 using StudentApplication.EF;
 using StudentApplication.EF.Services;
+using StudentApplication.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,12 +22,9 @@ using System.Windows.Shapes;
 
 namespace StudentApplication
 {
-   
     public partial class MainWindow : Window
     {
-        public int CurrentStudent;
-
-
+      
         public MainWindow()
         {
             InitializeComponent();
@@ -44,7 +42,7 @@ namespace StudentApplication
                 bool userfound = context.Students.Any((e) => e.Email == email && e.Password==password);
                 if (userfound)
                 {
-                    CurrentStudent=context.Students.Where(e=>e.Email==email).FirstOrDefault<Students>().Id;
+                    Authentication.currentStudentId = context.Students.Where(e=>e.Email==email).FirstOrDefault<Students>().Id;
                     GrantAccess();
                     Close();
                 }
