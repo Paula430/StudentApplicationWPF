@@ -19,13 +19,13 @@ namespace StudentApplication.ViewModels
         public RelayCommand CourseViewCommand { get; set; }
         public RelayCommand TestViewCommand { get; set; }
 
-
         public GradeViewModel GradeVM { get; set; }
         public CourseViewModel CourseVM { get; set; }
         public TestViewModel TestVM { get; set; }
 
 
         private object _currentView;
+
         private string _currentStudentName;
         private string _currentStudentLastName;
         private int _currentStudentAlbum;
@@ -130,8 +130,6 @@ namespace StudentApplication.ViewModels
             }
           
         }
-
-
 
     }
 }

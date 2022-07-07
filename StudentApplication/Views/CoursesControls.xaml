@@ -7,21 +7,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <StackPanel Margin="0,20,0,0">
-            <Border Background="#28283c" Margin="10" Height="50" Width="130" CornerRadius="20">
-                <RadioButton Content="Monday" Height="50" Foreground="White" FontSize="20" IsChecked="True" Style="{StaticResource ButtonDictionary}" Command="{Binding GradeViewCommand}" />
+        <StackPanel  VerticalAlignment="Center">
+            <Border Background="#28283c" Margin="10" Height="40" Width="100" CornerRadius="20">
+                <RadioButton Content="Monday" Margin="6" Height="50" Foreground="White" FontSize="15" IsChecked="True" Style="{StaticResource ButtonDictionary}" Command="{Binding GradeViewCommand}" />
             </Border>
-            <Border Background="#28283c" Margin="10" Height="50" Width="130" CornerRadius="20">
-                <RadioButton Content="Tuesday" Height="50" Foreground="White" FontSize="20" Style="{StaticResource ButtonDictionary}" Command="{Binding TestViewCommand}" />
+            <Border Background="#28283c" Margin="10" Height="40" Width="100" CornerRadius="20">
+                <RadioButton Content="Tuesday" Margin="6"  Height="50" Foreground="White" FontSize="15" Style="{StaticResource ButtonDictionary}" Command="{Binding TestViewCommand}" />
             </Border>
-            <Border Background="#28283c" Margin="10" Height="50" Width=" 130" CornerRadius="20">
-                <RadioButton Content="Wednesday" Height="50" Foreground="White" FontSize="20" Style="{StaticResource ButtonDictionary}" Command="{Binding CourseViewCommand}"/>
+            <Border Background="#28283c" Margin="10" Height="40" Width=" 100" CornerRadius="20">
+                <RadioButton Content="Wednesday" Margin="6" Height="50" Foreground="White" FontSize="15" Style="{StaticResource ButtonDictionary}" Command="{Binding CourseViewCommand}"/>
             </Border>
-            <Border Background="#28283c" Margin="10" Height="50" Width="130" CornerRadius="20">
-                <RadioButton Content="Thursday" Height="50" Foreground="White" FontSize="20" Style="{StaticResource ButtonDictionary}" Command="{Binding CourseViewCommand}"/>
+            <Border Background="#28283c" Margin="10" Height="40" Width="100" CornerRadius="20">
+                <RadioButton Content="Thursday" Margin="6" Height="50" Foreground="White" FontSize="15" Style="{StaticResource ButtonDictionary}" Command="{Binding CourseViewCommand}"/>
             </Border>
-            <Border Background="#28283c" Margin="10" Height="50" Width="130" CornerRadius="20">
-                <RadioButton Content="Friday" Height="50" Foreground="White" FontSize="20" Style="{StaticResource ButtonDictionary}" Command="{Binding CourseViewCommand}"/>
+            <Border Background="#28283c" Margin="10" Height="40" Width="100" CornerRadius="20">
+                <RadioButton Content="Friday" Height="50" Margin="6" Foreground="White" FontSize="15" Style="{StaticResource ButtonDictionary}" Command="{Binding CourseViewCommand}"/>
             </Border>
         </StackPanel>
     </Grid>
