@@ -51,7 +51,8 @@ namespace StudentApplication
                     MessageBox.Show("Enter an email.", "", MessageBoxButton.OK, MessageBoxImage.Error);
                     txtStudentEmail.Focus();
                 }
-                else if (!Regex.IsMatch(txtStudentEmail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+                else if (!Regex.IsMatch(txtStudentEmail.Text,
+                    @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
                 {
 
                     MessageBox.Show("Enter a valid email.","",MessageBoxButton.OK,MessageBoxImage.Error);

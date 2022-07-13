@@ -95,7 +95,8 @@ namespace StudentApplication.EF.Services
                         context.Courses,
                         test => test.CourseId,
                         course => course.Id,
-                        (test, course) => new GradeTestsCourses { StudentId = test.StudentId, GradeValue = test.GradeValue, TestNote = test.TestNote, CourseName = course.CourseName }
+                        (test, course) => new GradeTestsCourses { 
+                            StudentId = test.StudentId, GradeValue = test.GradeValue, TestNote = test.TestNote, CourseName = course.CourseName }
                         );
 
                 var entity = data.Where(d => d.StudentId == idStudent).ToList();
@@ -125,7 +126,8 @@ namespace StudentApplication.EF.Services
                         context.Courses,
                         test => test.CourseId,
                         course => course.Id,
-                        (test, course) => new TestsCourses{ CourseName = course.CourseName, testNote = test.Note, TestDate = test.Date, StudyId = test.StudyId }
+                        (test, course) => new TestsCourses{ 
+                            CourseName = course.CourseName, testNote = test.Note, TestDate = test.Date, StudyId = test.StudyId }
                     );
 
                 var entity = data.Where(d => d.StudyId == idstudy).ToList();

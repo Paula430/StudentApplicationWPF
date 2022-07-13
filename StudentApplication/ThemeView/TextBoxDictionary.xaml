@@ -8,9 +8,8 @@
                     <Border CornerRadius="10" Width="200" Height="50" Background="#28283c">
                         <Grid>
                             <Rectangle StrokeThickness="1"/>
-                            <TextBox Margin="1" Text="{TemplateBinding Text}" FontSize="18" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" Padding="5" Foreground="White" />
-                           
-                               
+                            <TextBox Margin="1" Text="{TemplateBinding Text}" FontSize="18" BorderThickness="0" Background="Transparent" 
+                                     VerticalAlignment="Center" Padding="5" Foreground="White" />
                         </Grid>
                     </Border>
                 </ControlTemplate>
